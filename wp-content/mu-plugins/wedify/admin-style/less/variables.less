@@ -1,0 +1,38 @@
+@blueLighter: #D9DEE1;
+@blue: #527182;
+
+@borderRadius: 2px;
+@boxShadow: rgba(0, 0, 0, .1) 0 1px 2px;
+
+
+label,
+.label{
+    white-space: normal;
+}
+
+// Buttons
+.btn() {
+    display: inline-block !important;
+    padding: 0 20px !important;
+    line-height: 28px !important;
+    height: 28px !important;
+    .border-radius(@borderRadius) !important;
+    text-align: center !important;
+    text-transform: uppercase !important;
+    font-weight: 600 !important;
+    font-size: 12px !important;
+    .normalTransition();
+    background: none !important;
+    .box-shadow(~"rgba(0,0,0,.1) 0 1px 2px ,inset rgba(255,255,255,.4) 0 1px 0")!important;
+}
+
+.btn-green() {
+    background: none !important;
+    #gradient > .vertical(#C2DB6D, #9ABC2B) !important;
+    border: 1px solid darken(#9ABC2B, 10%) !important;
+    color: darken(#9ABC2B, 25%) !important;
+    text-shadow: rgba(255, 255, 255, 0.5) 0 1px 0 !important;
+    &:hover {
+        #gradient > .vertical(darken(#C2DB6D, 5%), darken(#9ABC2B, 5%)) !important;
+    }
+}

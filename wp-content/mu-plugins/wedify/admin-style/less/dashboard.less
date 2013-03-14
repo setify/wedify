@@ -1,0 +1,30 @@
+.dashboard {
+    .accordion-group {
+        background: #FFF ;
+        .box-shadow(@boxShadow) ;
+        .border-radius(@borderRadius) ;
+        padding: 1px ;
+        border: none;
+        margin-bottom: 5px;
+        .accordion-heading {
+            border: none;
+            a {
+                padding: 12px 10px;
+                display: block;
+                #gradient > .vertical(#f3f3f2, #e8ecef);
+                text-shadow: #FFF 0 1px 0;
+                &:hover {
+                    #gradient > .vertical(darken(#f3f3f2, 2%), darken(#e8ecef,2%));
+                }
+            }
+        }
+        .accordion-body {
+            border: none;
+            .slowTransition();
+            .accordion-inner {
+                margin: 20px 10px;
+                border: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,69 @@
+html.wp-toolbar {
+    padding-top: 40px;
+}
+
+#wpadminbar {
+    display: none;
+    visibility: hidden;
+}
+
+@headerHeight: 48px;
+
+.wedify-header {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    height: @headerHeight;
+    width: 100%;
+    #gradient > .vertical(#6e7680,#535960);
+    .box-shadow(rgba(0,0,0,.4) 0 1px 3px);
+    color: #FFF;
+    .menu {
+        text-align: right;
+        margin: 0;
+        padding: 0;
+        ul {
+            display: inline-block;
+            width: auto;
+            margin: 0;
+            padding: 0;
+            border-left: 1px solid rgba(0, 0, 0, .4);
+            border-right: 1px solid rgba(255, 255, 255, .2);
+            font-size: 0;
+            li {
+                display: inline-block;
+                border-left: 1px solid rgba(255, 255, 255, .2);
+                border-right: 1px solid rgba(0, 0, 0, .4);
+                height: @headerHeight;
+                line-height: @headerHeight;
+                margin: 0;
+                padding: 0;
+                .normalTransition();
+                text-shadow: rgba(0, 0, 0, .4) 0 -1px 0;
+                a {
+                    display: inline-block;
+                    padding: 0 20px;
+                    line-height: @headerHeight;
+                    height: @headerHeight;
+                    font-size: 12px;
+                    color: lighten(#6e7680, 30%);
+                    &:hover {
+                        color: #FFF;
+                        #gradient > .vertical(#535960,#393f46);
+                        .normalTransition();
+                    }
+                }
+            }
+            .active {
+                a,
+                a:hover {
+                    .box-shadow(inset rgba(0,0,0,.8) 0 0 4px);
+                    #gradient > .vertical(#363c44, #474d55);
+                    color: #FFF;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+// Content Area Editor
+#post-body-content {
+    background: #FFFFFF;
+    .border-radius(@borderRadius);
+    .box-shadow(@boxShadow);
+    > div {
+        padding: 20px;
+    }
+}
+
+// Hide screen options
+#screen-meta-links {
+    display: none;
+    visibility: hidden;
+}
+
+// Boxen
+.widget, #widget-list .widget-top, .postbox, #titlediv, #poststuff .postarea, .stuffbox {
+    background: #FFF !important;
+    border: none !important;
+    .box-shadow(@boxShadow) !important;
+    .border-radius(@borderRadius) !important;
+    padding: 1px !important;
+}
+
+.widget .widget-top, .postbox h3, .stuffbox h3 {
+    #gradient > .vertical(#f3f3f2, #e8ecef) !important;
+    text-shadow: #FFF 0 1px 0;
+    border: none!important;
+    .box-shadow(none);
+    padding: 12px 10px !important;
+}
+
+// Page titles
+.wrap h2 {
+    text-align: left;
+    background: none !important;
+    margin: 40px 0 20px;
+    font-weight: 300 !important;
+    font-size: 28px !important;
+}
+.wrap h2 a {
+    float: right;
+    .btn();
+    .btn-green();
+}
+.wrap .icon32 {
+    display: none !important;
+    visibility: hidden !important;
+}

@@ -1,0 +1,49 @@
+body {
+    background: #eff2f4;
+    * {
+        font-family: 'Open Sans', sans-serif !important;
+        font-weight: 400;
+    }
+    h1, h2, h3 {
+        font-family: 'Open Sans', sans-serif !important;
+        font-weight: 300 !important;
+    }
+    a {
+        color: @linkColor;
+        text-decoration: none;
+    }
+    a:hover,
+    a:focus {
+        color: @linkColorHover;
+        text-decoration: none;
+    }
+
+}
+
+body, html {
+    background: darken(#D9DEE1, 5%);
+}
+
+#wpcontent {
+    #gradient > .vertical(#D9DEE1, darken(#D9DEE1, 5%));
+}
+
+// Wordpress modifications
+
+#wpwrap {
+    position: inherit
+}
+
+#wpbody {
+    width: 940px;
+    margin: 0 auto;
+}
+
+#wpcontent, #wpfooter {
+    margin-left: 0;
+    background: #FEBF1F5;
+}
+
+#wpwrap {
+    position: inherit
+}
